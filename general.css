@@ -1,0 +1,12 @@
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+p {
+    font-family: Roboto, Arial;
+    margin: 0px;
+}
+
+:root {
+    --header-height: 56px;
+}

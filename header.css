@@ -1,0 +1,188 @@
+.header {
+    background-color: #0F0F0F;
+    height: var(--header-height);
+    padding: 0 16px 0 16px;
+    display: flex;
+    flex-direction: row;
+    /* align for cross axis (here vertical) */
+    align-items: center;
+    /* justify for main axis (here horizontal) */
+    justify-content: space-between;
+
+    padding: 0px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+} 
+.header-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.header-button svg {
+    fill: currentColor;
+}
+
+.left {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* default */
+    flex-shrink: 0;
+}
+.hamburger {
+    padding: 8px;
+    margin-right: 4px;
+    border-radius: 40px;
+    transition:
+    background-color 0.1s,
+}
+.yt_logo {
+    height: 40px;
+    padding: 8px 0px 8px 0px;
+}
+
+.middle {
+    background-color: transparent;
+    /* display: flex; align: center to 
+    help its child div use flex & be center aligned */
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    max-width: 732px;
+}
+.search-space {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding: 0 4px 0 4px;
+    flex: 1;
+    min-width: 0;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    height: 40px;
+    padding: 0 4px 0 16px;
+    /* includes border inside box */ 
+    box-sizing: border-box;
+    border: 0.727px solid rgb(48,48,48);
+    border-radius: 40px 0 0 40px;
+    flex: 1;
+    min-width: 0;
+}
+.hidden-search {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+.search-box .hidden-search {
+    display: none;
+}
+.search-box:focus-within {
+    border-color: rgb(23, 123, 209);
+    margin-left: 0;
+}
+.search-box:focus-within .hidden-search {
+    display: flex;
+}
+.search-input{
+    width: 100%;
+    font-size: 16px;
+    padding: 1px 0 1px 0;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    min-width:40px;
+    /* includes border inside box */ 
+    box-sizing: border-box;
+    height: 40px;
+    border: 0.727px solid rgb(48,48,48);
+    border-left: none;
+    background-color: hsla(0, 0%, 100%, .08);
+    border-radius: 0 40px 40px 0;
+}
+.voice-search {
+    padding: 8px;
+    margin-left: 12px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: hsla(0, 0%, 100%, .08);
+    border-radius: 20px;
+    flex-shrink: 0;
+    transition: background-color 0.1s;
+}
+
+.right {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+.create-button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-right: 8px;
+    gap: 6px;
+    padding: 0 16px 0 16px;
+    background-color: hsla(0, 0%, 100%, .08);
+    border-radius: 20px;
+    transition: background-color 0.1s ease;
+}
+.create {
+    color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bell-button {
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 40px;
+    transition: 
+    background-color 0.1s,
+}
+.avatar-button {
+    padding: 1px 0px 1px 6px;
+}
+.pfp {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px 0 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.voice-search:hover, 
+.create-button:hover, 
+.bell-button:hover, 
+.hamburger:hover{
+    background-color: hsla(0, 0%, 100%, .2);
+}
+.voice-search:active, 
+.create-button:active, 
+.bell-button:active, 
+.hamburger:active{
+    background-color: hsla(0, 0%, 100%, .3);
+}
