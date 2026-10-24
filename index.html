@@ -56,7 +56,10 @@
                     </svg>
                 </button>
                     <!-- form for the search submission to results -->
-                    <form action="/results" class="search-form">
+                    <form 
+                    action="/results" 
+                    class="search-form" 
+                    id = "search-form">
                         <input
                             class="search-input"
                             type="text"
@@ -66,7 +69,10 @@
                     </form>
                 </div>
                 <!-- title = "Search" appears as tip when hovering-->
-                <button class="search-button header-button" title="Search">
+                <button class="search-button header-button" 
+                title="Search"
+                type = "submit"
+                form="search-form">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
