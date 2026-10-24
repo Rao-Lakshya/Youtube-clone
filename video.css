@@ -3,9 +3,9 @@
     margin: 0 16px 0 16px;
     display: grid;
     /* repeat(number_of_repetitions, column_definition) */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    row-gap: 60px;
-    column-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 64px;
+    column-gap: 44px;
 }
 
 .video {
