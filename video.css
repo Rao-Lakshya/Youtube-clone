@@ -4,8 +4,8 @@
     display: grid;
     /* repeat(number_of_repetitions, column_definition) */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    row-gap: 64px;
-    column-gap: 44px;
+    row-gap: 60px;
+    column-gap: 40px;
 }
 
 .video {
@@ -17,6 +17,7 @@
 .video:hover {
     background-color: rgb(60,60,60);
     border-radius: 3%;
+    padding: 6px;
 }
 
 .div_th {
