@@ -96,6 +96,10 @@
 .search-box:focus-within .hidden-search {
     display: flex;
 }
+.search-form {
+    flex: 1;
+    min-width: 0;
+}
 .search-input{
     width: 100%;
     font-size: 16px;
