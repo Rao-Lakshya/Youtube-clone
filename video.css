@@ -23,6 +23,27 @@
 .div_th {
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+.timestamp {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    border-radius: 4px;
+    font-size: 12px;
+    height: 18px;
+    padding: 1px 4px 1px 4px;
+    font-weight: 500;
+    bottom: 8px;
+    right: 8px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .th_img {
@@ -70,6 +91,8 @@
 }
 
 .ch_name {
+    display: flex;
+    gap: 8px;
     font-size: 14px;
     color: rgb(170,170,170);
     font-weight: 400;
